@@ -1,0 +1,33 @@
+<html>
+  <head><title> Dropdown Change To Another</title>
+<script language ="javascript" type = "text/javascript" >
+function change() {
+  if (document.getElementById('one').value == '1')
+    document.getElementById("two").value = '1';
+  else if (document.getElementById('one').value == '2')
+    document.getElementById("two").value = '3';
+  else if (document.getElementById('one').value == '3')
+    document.getElementById("two").value = '2';
+  else if (document.getElementById('one').value == '4')
+    document.getElementById("two").value = '2';
+  else if (document.getElementById('one').value == '5')
+    document.getElementById("two").value = '3';
+};</script> 
+</head>
+  </body>
+  <h3> Prices are related to the foods</h3>
+  <p>To check first select pastry in first drop down menu , you will see the price in 2nd optioin will automatically change to 30 Rs  which is also same for medu vada. price for tawa pulao and pav bhaji is also same = 100 Rs . </p>
+<select id="one" onchange="change();">
+  <option value="1">cake</option>
+  <option value="2">pastry</option>
+  <option value="3">pav bhaji</option>
+  <option value="4">tawa pulao</option>
+  <option value="5">medu vada</option>
+</select>
+<select id="two">
+  <option value="1"> 250 Rs </option>
+  <option value="2">100 Rs</option>
+  <option value="3">30 Rs</option>
+</select>
+</body>
+</html>
